@@ -3,6 +3,13 @@ $clrRoxo: rgba(105,47,165,1);
 $clrCinza: rgba(243,243,243,1);
 $font: 'Roboto', sans-serif; 
 
-h1{
-  color: $clrRoxo;
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: $font;
+  width: 100% !important;
+  min-height: 100vh;
 }

@@ -5,7 +5,6 @@ import { Footer } from './components/footer/Footer'
 
 // IMAGES
 import mouseIcon from './assets/mouse.png';
-import xicara from './assets/xicara.png';
 import devices from './assets/devices.png';
 import cafe from './assets/cafe.png';
 import moedas from './assets/moedas.png';
@@ -17,8 +16,8 @@ function App(){
   return (
    <>
      <Menu/>
-     <section>
-       <article>
+     <section className="content_Main">
+       <article className="Banner">
          <div>
            <h2>Teste de Admissão</h2>
            <h1>Banner estático</h1>
@@ -28,8 +27,8 @@ function App(){
            <img src={mouseIcon}></img>
          </div>
        </article>
-       <article>
-        <img src={xicara}></img>
+       <article className="Xicara">
+         {/* <div className="imgXicara"></div> */}
        </article>
      </section>
 

@@ -1,0 +1,121 @@
+
+// Variables
+$clrRoxo: rgba(105,47,165,1);
+$clrCinza: rgba(243,243,243,1);
+$width: 960px;
+$imgXicara: './assets/xicara.png';
+$bg: './assets/bg.png';
+
+.content_Main{
+    width: 100%;
+     height: 510px;
+     display: flex;
+     flex-direction: row;
+
+    .Banner{
+     width: 50%;
+     height: 100%;
+     background-color: $clrCinza;
+     display:flex;
+     justify-content: flex-end;
+     align-items: center;
+
+
+     div{
+         width: 75%;
+         max-width: 480px;
+         height: 400px;
+        //  background-color: rebeccapurple;
+         display:flex;
+         justify-content: center;
+         align-items: flex-start;
+         flex-direction: column;
+
+         h1{
+             font-size: 42px;
+             padding: 15px 0;
+         }
+         h2{
+            color: $clrRoxo ;
+         }
+         img{
+             margin-top: 15px;
+         }
+
+     }
+    }
+    .Xicara{
+        width: 50%;
+        height: 100%;
+        position: relative;
+        // background-color: rebeccapurple;
+        background-image: url($bg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        display:flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        .imgXicara{
+            width: 444px;
+            height: 422px;
+            position: absolute;
+            bottom:-200px;
+            background-image: url($imgXicara);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }   
+    @media screen and (min-width: 200px) and (max-width: 680px) {
+       &{
+        //    background-color: aqua;
+          position: relative;
+          height: 220px;
+
+           .Banner{
+               width: 100%;
+               height: 100%;
+            //    height: 214px;
+               position: absolute;
+               background-color: transparent;
+               top: 0;
+               left: 0;
+               z-index: 200;
+               justify-content: center;
+               align-items: center;
+
+            div{
+                width: 90%;
+
+            h1,h2,p{
+                // width: 85%;
+                color: rgb(253, 253, 253);
+            }
+
+            h1{  
+                font-size:22px;
+                padding: 5px 0;
+            }
+            p{
+                font-size:16px;
+            }
+            h2{
+               font-size:18px;
+            }
+            img{
+                display: none;
+            }
+           }
+           }
+           .Xicara{
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100%;
+               z-index: 100;
+           }
+       }
+    }
+}
