@@ -1,9 +1,100 @@
 
 import './app.scss';
+import { Menu } from './components/menu/Menu';
+import { Footer } from './components/footer/Footer'
 
-function App() {
+// IMAGES
+import mouseIcon from './assets/mouse.png';
+import xicara from './assets/xicara.png';
+import devices from './assets/devices.png';
+import cafe from './assets/cafe.png';
+import moedas from './assets/moedas.png';
+import ambiente from './assets/ambiente.png';
+
+
+
+function App(){
   return (
-   <h1>Hello World</h1>
+   <>
+     <Menu/>
+     <section>
+       <article>
+         <div>
+           <h2>Teste de Admissão</h2>
+           <h1>Banner estático</h1>
+           <p>
+           Etiam sit amet diam dignissim sem pulvinar pulvinar. Quisque elementum purus nec urna consequat, ac feugiat eros ultrices. Mauris consectetur sapien non eros ultrices, nec ultrices turpis facilisis.
+           </p>
+           <img src={mouseIcon}></img>
+         </div>
+       </article>
+       <article>
+        <img src={xicara}></img>
+       </article>
+     </section>
+
+     <section>
+         <section className="Services">
+           <header>
+             <h2>Serviços</h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. elit et, ultrices est.</p>
+           </header>
+           <section>
+             <article>
+               <img src={devices}></img>
+               <h2>Produtos 1</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius nisi odio, pretium.</p>
+             </article>
+             <article>
+               <img src={devices}></img>
+               <h2>Produtos 2</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius nisi odio, pretium.</p>
+             </article>
+             <article>
+               <img src={devices}></img>
+               <h2>Produtos 3</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius nisi odio, pretium.</p>
+             </article>
+           </section>
+         </section>
+
+         <section>
+           <header>
+             <h2>Diferenciais</h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. elit et, ultrices est.</p>
+           </header>
+           <section>
+             <article>
+               <img src={cafe}></img>
+               <h2>café</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius nisi odio, pretium.</p>
+             </article>
+             <article>
+               <img src={moedas}></img>
+               <h2>moedas</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius nisi odio, pretium.</p>
+             </article>
+             <article>
+               <img src={ambiente}></img>
+               <h2>ambiente</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius nisi odio, pretium.</p>
+             </article>
+           </section>
+         </section>
+         <section>
+           <header>
+             <h2>Pesornas</h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. elit et, ultrices est.</p>
+           </header>
+           <section> 
+             ... CARROSSEL ...
+           </section>
+          </section>
+         
+     </section>
+      <Footer />
+     
+   </>
   );
 }
 
