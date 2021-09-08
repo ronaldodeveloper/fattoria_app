@@ -1,7 +1,10 @@
 
 import './app.scss';
 import { Menu } from './components/menu/Menu';
-import { Footer } from './components/footer/Footer'
+import { Footer } from './components/footer/Footer';
+// import Carousel from 'react-elastic-carousel';
+import Card from './components/carousel/Card';
+// import './components/carousel/card.scss'
 
 // IMAGES
 import mouseIcon from './assets/mouse.png';
@@ -57,37 +60,37 @@ function App(){
            </section>
          </section>
 
-         <section>
+         <section className="diferenciais">
            <header>
              <h2>Diferenciais</h2>
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. elit et, ultrices est.</p>
            </header>
            <section>
              <article>
-               <img src={cafe}></img>
+               <img src={cafe} className="iconDif"></img>
                <h2>café</h2>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius nisi odio, pretium.</p>
              </article>
              <article>
-               <img src={moedas}></img>
+               <img src={moedas} className="iconDif"></img>
                <h2>moedas</h2>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius nisi odio, pretium.</p>
              </article>
              <article>
-               <img src={ambiente}></img>
+               <img src={ambiente} className="iconDif"></img>
                <h2>ambiente</h2>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius nisi odio, pretium.</p>
              </article>
            </section>
          </section>
-         <section>
+
+         {/* section PERSONAS */}
+         <section className="personas">
            <header>
-             <h2>Pesornas</h2>
+             <h2>Personas</h2>
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. elit et, ultrices est.</p>
-           </header>
-           <section> 
-             ... CARROSSEL ...
-           </section>
+           </header>   
+             <Card />
           </section>
          
      </section>

@@ -77,7 +77,6 @@ $bg: './assets/bg.png';
            .Banner{
                width: 100%;
                height: 100%;
-            //    height: 214px;
                position: absolute;
                background-color: transparent;
                top: 0;
@@ -117,5 +116,94 @@ $bg: './assets/bg.png';
                z-index: 100;
            }
        }
+    }
+}
+
+// DIFERENCIAIS
+.diferenciais{
+    width: 60%;
+    margin: 0 auto;
+    height: 100%;
+    // background-color:rgb(218, 182, 253);
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+
+    header{
+    width: 100%;
+    // background-color:rgb(218, 182, 253);
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items: center;
+
+    // h2{}
+    p{
+        padding: 30px;
+    }
+      
+    }
+    section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+    article{
+    width:204px;
+    height: auto;
+    min-height:191;
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+    img.iconDif{
+        width:70px;
+        height: 70px;
+    }
+
+    h2{
+        padding: 10px;
+    }
+    p{
+        padding: 10px;
+    }
+    }
+
+    }
+}
+
+
+// PERSONAS
+.personas{
+    width: 100%;
+    height: 320px;
+    // background-color:rgb(158, 118, 197);
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items: center;
+
+    header{
+    width: 100%;
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        width: 90%;
+        padding: 20px 0 30px;
+        text-align: center;
+    }
+
     }
 }
