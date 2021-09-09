@@ -2,27 +2,28 @@
 import './app.scss';
 import { Menu } from './components/menu/Menu';
 import { Footer } from './components/footer/Footer';
-// import Carousel from 'react-elastic-carousel';
 import Card from './components/carousel/Card';
 import CardServicos from './components/carousel/CardServicos';
 // import './components/carousel/card.scss'
+// import Carousel from 'react-elastic-carousel';
 
 // IMAGES
 import mouseIcon from './assets/mouse.png';
-// import devices from './assets/devices.png';
 import cafe from './assets/cafe.png';
 import moedas from './assets/moedas.png';
 import ambiente from './assets/ambiente.png';
 
-
-
+// MenuToggle
+// import MenuListComposition from './components/menu/MenuToggle'
 
 
 
 function App(){
+ 
   return (
    <>
      <Menu/>
+     {/* <MenuListComposition /> */}
      <section className="content_Main">
        <article className="Banner">
          <div>
@@ -35,38 +36,30 @@ function App(){
          </div>
        </article>
        <article className="Xicara">
-         {/* <div className="imgXicara"></div> */}
+         <div className="imgXicara">
+           <span style={{smoke:1}}></span>
+           <span ></span>
+           <span ></span>
+           <span ></span>
+           <span ></span>
+           <span ></span>
+           <span ></span>
+           <span ></span>
+         </div>
        </article>
      </section>
 
-     {/* <section> */}
-         <section className="Services">
+   
+         <section className="Services" id="services">
            <header>
              <h2>Serviços</h2>
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. elit et, ultrices est.</p>
            </header>
 
            <CardServicos />
-           {/* <section>
-             <article>
-               <img src={devices}></img>
-               <h2>Produtos 1</h2>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius nisi odio, pretium.</p>
-             </article>
-             <article>
-               <img src={devices}></img>
-               <h2>Produtos 2</h2>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius nisi odio, pretium.</p>
-             </article>
-             <article>
-               <img src={devices}></img>
-               <h2>Produtos 3</h2>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius nisi odio, pretium.</p>
-             </article>
-           </section> */}
          </section>
 
-         <section className="Diferenciais">
+         <section className="Diferenciais" id="diferenciais">
            <header>
              <h2>Diferenciais</h2>
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. elit et, ultrices est.</p>
@@ -90,8 +83,7 @@ function App(){
            </section>
          </section>
 
-         {/* section PERSONAS */}
-         <section className="personas">
+         <section className="personas" id="personas">
            <header>
              <h2>Personas</h2>
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. elit et, ultrices est.</p>
@@ -99,7 +91,6 @@ function App(){
              <Card />
           </section>
          
-     {/* </section> */}
       <Footer />
      
    </>

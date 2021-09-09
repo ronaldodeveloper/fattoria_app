@@ -8,18 +8,24 @@
    [] rolagem smokem
 
 > PERSONAS: 
-   [] ajustar setas e paddign
+   [x] ajustar setas e paddign
    
 > BANNER
-   [] inserir Xicara
-   [] inserir efito na xicara 
+   [x] inserir Xicara
+   [x] inserir efito na xicara 
 
 > SERVICOS
    [] ajustar carousel
 
 > FOOTER 
-   [] recortar a imagem do mobile
-   [] fixar no rodape
+   [x] recortar a imagem do mobile
+   [x] fixar no rodape
+
+
+>> detalhes finais 
+   [] remover todos os comentarios de código
+   [] criar instrucoes de uso no readme
+   [] inserir prefixos compatibilidade
 
 >> Concluir e Apresentar test
    [] fazer deploy github

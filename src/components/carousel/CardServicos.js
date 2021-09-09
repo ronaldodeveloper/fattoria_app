@@ -21,7 +21,7 @@ const CardServicos= ()=>{
   
       return (
 
-        <Carousel className="carousel" breakPoints={breakPoints}>
+        <Carousel className="carouselServicos" breakPoints={breakPoints}>
         {card.map(item => { 
             return (
                 <article key={item.id} className="cardServicos">

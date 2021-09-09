@@ -1,5 +1,5 @@
 
-import mobile from '../../assets/mobile.png';
+import mobile from '../../assets/mobile_footer.png';
 import joia from '../../assets/joia.png';
 import './footer.scss';
 

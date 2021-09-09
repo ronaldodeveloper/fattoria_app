@@ -11,33 +11,40 @@ export const Menu= ()=>{
       const btnEffectCenter= document.querySelector('.menu_icon_center')
       const btnEffectBotton= document.querySelector('.menu_icon_botton')
       const logo= document.querySelector('.logo')
+
       btnEffectTop.classList.toggle('ActiveEffectIconTop')
       btnEffectCenter.classList.toggle('ActiveEffectIconCenter')
       btnEffectBotton.classList.toggle('ActiveEffectIconBotton')
       logo.classList.toggle('logoOF')
+
     }
+
+    const removeLink = (e)=>{
+       //console.log('removeLink')
+    }
+    
   
   let MenuToggle;
    if (showMenu){
       MenuToggle = 
         <ul className="box_menu_list">
           <li className="menu_list">
-            <a href="" className="menu_list_items">Serviços</a></li>
+            <a href="#servives" className="menu_list_items" onClick={removeLink}>Serviços</a></li>
           <li className="menu_list">
-            <a href="" className="menu_list_items">Diferenciais</a></li>
+            <a href="#diferenciais" className="menu_list_items" onClick={removeLink}>Diferenciais</a></li>
           <li className="menu_list">
-            <a href="" className="menu_list_items">Personas</a></li>
+            <a href="#personas" className="menu_list_items" onClick={removeLink}>Personas</a></li>
         </ul>;
    }
         
    const MenuHorizontal= 
         <ul className="box_menuHorizontal_list">
           <li className="menuHorizontal_list">
-            <a href="" className="menuHorizontal_list_items">Serviços</a></li>
+            <a href="#services" className="menuHorizontal_list_items">Serviços</a></li>
           <li className="menuHorizontal_list">
-            <a href="" className="menuHorizontal_list_items">Diferenciais</a></li>
+            <a href="#diferenciais" className="menuHorizontal_list_items">Diferenciais</a></li>
           <li className="menuHorizontal_list">
-            <a href="" className="menuHorizontal_list_items">Personas</a></li>
+            <a href="#personas" className="menuHorizontal_list_items">Personas</a></li>
         </ul>;
   
      return (
@@ -60,22 +67,3 @@ export const Menu= ()=>{
      )
   }
 
-
-
-
-//()=> {
-//     return (
-//         <>
-//            <header>
-//             <section>
-//                <h2>T.A</h2>
-//                <ul>
-//                    <li><a href="#">Serviços</a></li>
-//                    <li><a href="#">Diferenciais</a></li>
-//                    <li><a href="#">Personas</a></li>
-//                </ul>
-//              </section>
-//            </header>
-//         </>
-//     )
-// }
