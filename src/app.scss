@@ -119,8 +119,38 @@ $bg: './assets/bg.png';
     }
 }
 
+// SERVICES
+.Services{
+    margin: 0 auto;
+    // background-color: rebeccapurple;
+    width: 100%;
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items: center;
+
+    header {
+    width: 75%;
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        padding-top:50px;
+    }
+    p{
+        padding:15px 0 40px;
+
+    }
+       
+    }
+
+
+}
+
 // DIFERENCIAIS
-.diferenciais{
+.Diferenciais{
     width: 60%;
     margin: 0 auto;
     height: 100%;

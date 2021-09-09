@@ -4,14 +4,18 @@ import { Menu } from './components/menu/Menu';
 import { Footer } from './components/footer/Footer';
 // import Carousel from 'react-elastic-carousel';
 import Card from './components/carousel/Card';
+import CardServicos from './components/carousel/CardServicos';
 // import './components/carousel/card.scss'
 
 // IMAGES
 import mouseIcon from './assets/mouse.png';
-import devices from './assets/devices.png';
+// import devices from './assets/devices.png';
 import cafe from './assets/cafe.png';
 import moedas from './assets/moedas.png';
 import ambiente from './assets/ambiente.png';
+
+
+
 
 
 
@@ -35,13 +39,15 @@ function App(){
        </article>
      </section>
 
-     <section>
+     {/* <section> */}
          <section className="Services">
            <header>
              <h2>Serviços</h2>
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. elit et, ultrices est.</p>
            </header>
-           <section>
+
+           <CardServicos />
+           {/* <section>
              <article>
                <img src={devices}></img>
                <h2>Produtos 1</h2>
@@ -57,10 +63,10 @@ function App(){
                <h2>Produtos 3</h2>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius nisi odio, pretium.</p>
              </article>
-           </section>
+           </section> */}
          </section>
 
-         <section className="diferenciais">
+         <section className="Diferenciais">
            <header>
              <h2>Diferenciais</h2>
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. elit et, ultrices est.</p>
@@ -93,7 +99,7 @@ function App(){
              <Card />
           </section>
          
-     </section>
+     {/* </section> */}
       <Footer />
      
    </>
