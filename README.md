@@ -15,7 +15,7 @@
    [x] inserir efito na xicara 
 
 > SERVICOS
-   [] ajustar carousel
+   [x] ajustar carousel
 
 > FOOTER 
    [x] recortar a imagem do mobile

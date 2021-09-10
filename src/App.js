@@ -13,8 +13,7 @@ import cafe from './assets/cafe.png';
 import moedas from './assets/moedas.png';
 import ambiente from './assets/ambiente.png';
 
-// MenuToggle
-// import MenuListComposition from './components/menu/MenuToggle'
+
 
 
 

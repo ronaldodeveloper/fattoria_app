@@ -1,7 +1,9 @@
 import './menu.scss';
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 export const Menu= ()=>{
+
+   const links= useRef(null)
 
     const [showMenu, setShowMenu]= useState(false);
     function toggleAtive(e) {
@@ -17,11 +19,15 @@ export const Menu= ()=>{
       btnEffectBotton.classList.toggle('ActiveEffectIconBotton')
       logo.classList.toggle('logoOF')
 
+      // links.current.addEventListener('click',()=>{
+      //     console.log('hello!')
+      // })
+
     }
 
-    const removeLink = (e)=>{
-       //console.log('removeLink')
-    }
+    // const removeLink = (e)=>{
+    //    console.log('removeLink')
+    // }
     
   
   let MenuToggle;
@@ -29,11 +35,11 @@ export const Menu= ()=>{
       MenuToggle = 
         <ul className="box_menu_list">
           <li className="menu_list">
-            <a href="#servives" className="menu_list_items" onClick={removeLink}>Serviços</a></li>
+            <a href="#servives" className="menu_list_items" ref={links}>Serviços</a></li>
           <li className="menu_list">
-            <a href="#diferenciais" className="menu_list_items" onClick={removeLink}>Diferenciais</a></li>
+            <a href="#diferenciais" className="menu_list_items" >Diferenciais</a></li>
           <li className="menu_list">
-            <a href="#personas" className="menu_list_items" onClick={removeLink}>Personas</a></li>
+            <a href="#personas" className="menu_list_items" >Personas</a></li>
         </ul>;
    }
         

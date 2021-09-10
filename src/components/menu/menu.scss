@@ -6,7 +6,7 @@ $clrRoxo: rgba(105,47,165,1);
     height: 90px;
     position: fixed;
     display:flex;
-    // background-color:rgb(255, 164, 164);
+    background-color:rgb(255, 255, 255);
     align-items: center;
     justify-content: center;
     z-index: 99999;
@@ -55,6 +55,7 @@ $clrRoxo: rgba(105,47,165,1);
             .menuHorizontal_list{
                 width: calc(100% / 15);
                 min-width: 100px;
+                position: relative;
                 
                 // links
                 .menu_list_items, .menuHorizontal_list_items{
@@ -63,6 +64,21 @@ $clrRoxo: rgba(105,47,165,1);
                 }
                 .menuHorizontal_list_items:hover{
                     color: $clrRoxo;
+                }
+                .menuHorizontal_list_items::before{
+                    content: " ";
+                    width: 0;
+                    height:3px;
+                    position: absolute;
+                    background-color:rgba(105,47,165,1);
+                    left:0;
+                    top:110%; 
+                    transition: all .4s ease-in;
+                
+                }
+                .menuHorizontal_list_items:hover::before{
+                    width: 70%;   
+                
                 }
             }
         }
