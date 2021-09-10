@@ -3,7 +3,6 @@ import Carousel from 'react-elastic-carousel';
 import devices from '../../assets/devices.png';
 import './cardServicos.scss'
 
-
 const CardServicos= ()=>{ 
 
     let message= `Lorem ipsum dolor sit amet, consectetur adipiscing elit. elit et, ultrices estadipiscing elit elit et, ultrices est`
@@ -19,7 +18,7 @@ const CardServicos= ()=>{
         {width: 800, itemsToShow: 3}
     ]
   
-      return (
+   return (
 
         <Carousel className="carouselServicos" breakPoints={breakPoints}>
         {card.map(item => { 

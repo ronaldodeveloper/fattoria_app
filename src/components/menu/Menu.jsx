@@ -1,48 +1,41 @@
 import './menu.scss';
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 
 export const Menu= ()=>{
 
-   const links= useRef(null)
-
     const [showMenu, setShowMenu]= useState(false);
+
     function toggleAtive(e) {
       setShowMenu(!showMenu)
-      // Effect Icons
       const btnEffectTop= document.querySelector('.menu_icon_top')
       const btnEffectCenter= document.querySelector('.menu_icon_center')
       const btnEffectBotton= document.querySelector('.menu_icon_botton')
       const logo= document.querySelector('.logo')
-
       btnEffectTop.classList.toggle('ActiveEffectIconTop')
       btnEffectCenter.classList.toggle('ActiveEffectIconCenter')
       btnEffectBotton.classList.toggle('ActiveEffectIconBotton')
-      logo.classList.toggle('logoOF')
-
-      // links.current.addEventListener('click',()=>{
-      //     console.log('hello!')
-      // })
-
+      logo.classList.toggle('logoOF') 
     }
 
-    // const removeLink = (e)=>{
-    //    console.log('removeLink')
-    // }
-    
-  
+  const removeLink = (e)=>{
+    if(e.target){
+      return !toggleAtive()
+    }
+  }
+
   let MenuToggle;
    if (showMenu){
       MenuToggle = 
         <ul className="box_menu_list">
           <li className="menu_list">
-            <a href="#servives" className="menu_list_items" ref={links}>Serviços</a></li>
+            <a href="#servives" className="menu_list_items" onClick={removeLink}>Serviços</a></li>
           <li className="menu_list">
-            <a href="#diferenciais" className="menu_list_items" >Diferenciais</a></li>
+            <a href="#diferenciais" className="menu_list_items" onClick={removeLink}>Diferenciais</a></li>
           <li className="menu_list">
-            <a href="#personas" className="menu_list_items" >Personas</a></li>
+            <a href="#personas" className="menu_list_items" onClick={removeLink}>Personas</a></li>
         </ul>;
    }
-        
+    
    const MenuHorizontal= 
         <ul className="box_menuHorizontal_list">
           <li className="menuHorizontal_list">
@@ -52,8 +45,8 @@ export const Menu= ()=>{
           <li className="menuHorizontal_list">
             <a href="#personas" className="menuHorizontal_list_items">Personas</a></li>
         </ul>;
-  
-     return (
+
+  return (
          <>
          <header className="container_header">
           <section className="menu_center">

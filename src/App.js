@@ -4,8 +4,6 @@ import { Menu } from './components/menu/Menu';
 import { Footer } from './components/footer/Footer';
 import Card from './components/carousel/Card';
 import CardServicos from './components/carousel/CardServicos';
-// import './components/carousel/card.scss'
-// import Carousel from 'react-elastic-carousel';
 
 // IMAGES
 import mouseIcon from './assets/mouse.png';
@@ -13,18 +11,13 @@ import cafe from './assets/cafe.png';
 import moedas from './assets/moedas.png';
 import ambiente from './assets/ambiente.png';
 
-
-
-
-
 function App(){
  
-  return (
+return (
    <>
      <Menu/>
-     {/* <MenuListComposition /> */}
-     <section className="content_Main">
-       <article className="Banner">
+      <section className="content_Main">
+        <article className="Banner">
          <div>
            <h2>Teste de Admissão</h2>
            <h1>Banner estático</h1>
@@ -33,8 +26,8 @@ function App(){
            </p>
            <img src={mouseIcon}></img>
          </div>
-       </article>
-       <article className="Xicara">
+        </article>
+        <article className="Xicara">
          <div className="imgXicara">
            <span style={{smoke:1}}></span>
            <span ></span>
@@ -45,20 +38,18 @@ function App(){
            <span ></span>
            <span ></span>
          </div>
-       </article>
-     </section>
+        </article>
+      </section>
 
-   
-         <section className="Services" id="services">
+      <section className="Services" id="services">
            <header>
              <h2>Serviços</h2>
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. elit et, ultrices est.</p>
            </header>
-
            <CardServicos />
-         </section>
+      </section>
 
-         <section className="Diferenciais" id="diferenciais">
+      <section className="Diferenciais" id="diferenciais">
            <header>
              <h2>Diferenciais</h2>
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. elit et, ultrices est.</p>
@@ -80,15 +71,15 @@ function App(){
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius nisi odio, pretium.</p>
              </article>
            </section>
-         </section>
+      </section>
 
-         <section className="personas" id="personas">
+      <section className="personas" id="personas">
            <header>
              <h2>Personas</h2>
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. elit et, ultrices est.</p>
            </header>   
              <Card />
-          </section>
+      </section>
          
       <Footer />
      
